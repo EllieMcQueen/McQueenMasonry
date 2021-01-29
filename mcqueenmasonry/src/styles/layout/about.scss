@@ -1,0 +1,55 @@
+@import './variables';
+.about-section{
+    position: relative;
+    top: 160px;
+    //background: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: $text-color;
+    //background-image: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
+	// // min-height: 100vh;
+	min-height: 30rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    overflow: hidden;
+
+    .about_img{
+        //background-image: 'Ellie.jpg';
+        position: relative;
+        height: 400px;
+        width: 400px;
+        border: 1px solid rgb(200, 200, 200);
+    }
+    .about-main-text{
+        padding: 200px 0px 300px 0px;
+    
+        .about-text{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: .05em;
+            padding: 17px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: $text-color;
+        }
+        
+    }
+    @media (min-width: $breakpoint-tablet){
+        .about-section{
+    
+            .about-main-text{
+                padding: 200px 0px 300px 0px;
+    
+                .about-text{
+                    font-size: 4em;
+                }
+            }
+        }   
+    }
+    }
+
