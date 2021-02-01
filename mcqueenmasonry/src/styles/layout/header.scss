@@ -1,8 +1,8 @@
 @import './variables';
 
 .header-section{
-    background-image: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
-    color: peachpuff;
+    background-image: black;
+    color: rgb(184, 35, 35);;
     width: 100vw;
     padding:0px 0px;
     position: absolute;
@@ -64,14 +64,14 @@
             .home.yellow{
                 color: $header-link-color;
             }
-            .skills.white{
-                color: $text-color;
+            .services.white{
+                color: $floating-text-color;
             }
             .projects.white{
-                color: $text-color;
+                color: $floating-text-color;
             }
             .contact.white{
-                color: $text-color;
+                color: $floating-text-color;
             }
         }
         .floating-nav div a{
@@ -86,7 +86,7 @@
             padding: .75em 7px;
         }
         .floating-nav div a:hover{
-            color:$text-color;
+            color:$floating-text-color;
         }
     }
 }
@@ -116,7 +116,7 @@
                 padding: .75em 1em;
             }
             .floating-nav div a:hover{
-                color:$text-color;
+                color:$floating-text-color;
             }
         }
     }

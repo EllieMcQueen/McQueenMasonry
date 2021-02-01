@@ -4,7 +4,7 @@
     background-color: $contact-color;
     color: white;
     padding: 50px 0px 50px 0px;
-    background-image: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
+    background-image: linear-gradient(0.25turn,black,grey,grey,grey, grey,grey, black);
 
     .email-alert{
         width: 300px;
@@ -27,7 +27,10 @@
             font-size: 16px;
         }
     }
-    .icon-flex{
+    .contact-section p{
+        font-size: 16px;
+    }
+    .contact-icon-flex{
         padding: 17px;
     
         .icon{
@@ -49,31 +52,36 @@
             color: $off-yellow;
         }
     }
-    .contact-icon-flex{
-        padding: 35px;
+    // .contact-icon-flex{
+    //     padding: 35px;
     
-        .icon{
-            display: inline-block;
-            margin: 0px 10px 0px 10px;
-            width: 55px;
-        }
-        .icon a{
-            color:$text-color;
-        }
-        .icon a:hover{
-            color: $off-yellow;
-        }
+    //     .icon{
+    //         display: inline-block;
+    //         margin: 0px 10px 0px 10px;
+    //         width: 55px;
+    //     }
+    //     .icon a{
+    //         color:$text-color;
+    //     }
+    //     .icon a:hover{
+    //         color: $off-yellow;
+    //     }
+    
+    h1 span span {
+        position: relative;
+        animation: move-text-color .6s ease-out forwards;
+        bottom: -1em;
+        opacity: 0;
+    }
+    h1 span span:hover{
+        animation: infinite;
     }
 
-.contact-section p{
-    font-size: 16px;
-
-}
 @keyframes move-text-color {
     0% {
         bottom: -0.2em;
         opacity: 1;
-        color: teal;
+        color: rgb(184, 35, 35);
     }
     
     50% {

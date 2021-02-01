@@ -2,7 +2,7 @@ import './styles/main.scss';
 import './styles/layout/App.scss';
 import Header from './Components/Header';
 import About from './Components/About';
-import Services from './Components/Services';
+// import Services from './Components/Services';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <About/>
-      <Services/>
+      {/* <Services/> */}
       <Projects/>
       <Contact/>
     </div>

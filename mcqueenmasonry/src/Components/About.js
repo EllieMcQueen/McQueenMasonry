@@ -16,7 +16,14 @@ const About = () => {
         </h1>
 
         <div className="icon-flex">
-       
+        <div className="icon">
+            <a href="https://www.linkedin.com/company/mcqueen-masonry-inc./about/">
+              {linkedInSquare}
+            </a>
+          </div>
+          <div className="icon">
+            <a href="mailto: estimaiting@mcqueeenmasonry.com">{emailSquare}</a>
+          </div>
           
         </div>
       </div>

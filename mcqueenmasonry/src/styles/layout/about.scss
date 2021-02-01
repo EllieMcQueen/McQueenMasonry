@@ -1,21 +1,20 @@
 @import './variables';
 .about-section{
-    position: relative;
-    top: 160px;
-    //background: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
+    background-color: $about-color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     color: $text-color;
+    height: 100vh;
     //background-image: linear-gradient(0.25turn,teal,#061922,#061922,#061922, #061922,#061922, teal);
 	// // min-height: 100vh;
-	min-height: 30rem;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-    align-content: center;
-    overflow: hidden;
+	// min-height: 30rem;
+	// position: relative;
+	// overflow: hidden;
+	// display: flex;
+	// justify-content: center;
+    // align-content: center;
+    // overflow: hidden;
 
     .about_img{
         //background-image: 'Ellie.jpg';
@@ -38,18 +37,80 @@
             color: $text-color;
         }
         
-    }
-    @media (min-width: $breakpoint-tablet){
-        .about-section{
-    
-            .about-main-text{
-                padding: 200px 0px 300px 0px;
-    
-                .about-text{
-                    font-size: 4em;
-                }
+        .icon-flex{
+            padding: 17px;
+        
+            .icon{
+                display: inline-block;
+                margin: 0px 6px 0px 6px;
+                width: 55px;
+                transition-duration: 1s;
             }
-        }   
+            .icon:hover{
+                display: inline-block;
+                margin: 0px 6px 0px 6px;
+                transform: scale(2,2);
+            }
+            .icon a{
+                color:$text-color;
+                transition-duration: 1s;
+            }
+            .icon a:hover{
+                color: $off-yellow;
+            }
+        }
     }
-    }
+}
+h1 span span {
+    position: relative;
+    animation: move-text-color .6s ease-out forwards;
+    bottom: -1em;
+    opacity: 0;
+}
+h1 span span:hover{
+    animation: infinite;
+}
 
+@keyframes move-text-color {
+    0% {
+        bottom: -0.2em;
+        opacity: 1;
+        color: rgb(184, 35, 35);
+    }
+    
+    50% {
+        bottom: 0.2em;
+        color: $off-yellow;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+        color: white;
+    }
+}
+
+@media (min-width: $breakpoint-tablet){
+    .about-section{
+
+        .about-main-text{
+            padding: 300px 0px 540px 0px;
+
+            .about-text{
+                font-size: 4em;
+            }
+        }
+    }   
+}
+
+@media (min-width: $breakpoint-desktop){
+    .about-section{
+
+        .about-main-text{
+            padding: 200px 0px 470px 0px;
+
+            .about-text{
+                font-size: 4em;
+            }
+        }
+    }   
+}

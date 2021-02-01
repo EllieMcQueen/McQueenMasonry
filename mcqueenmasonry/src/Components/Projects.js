@@ -39,7 +39,7 @@ const Projects = () => {
           <strong>About:</strong>blah blah blah
         </p>
         <p>
-          <strong>Description:</strong> Blah Vlah Blah
+          <strong>Description:</strong> Blah Blah Blah
         </p>
         
         <Carousel className="project2Carousel">
