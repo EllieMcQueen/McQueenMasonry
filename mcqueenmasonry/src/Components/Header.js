@@ -4,7 +4,7 @@ const Header = ()=>{
 
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
-        let homeLink = document.getElementsByClassName("home")[0];
+        // let homeLink = document.getElementsByClassName("home")[0];
         let servicesLink = document.getElementsByClassName("services")[0];
         let projectsLink = document.getElementsByClassName("projects")[0];
         let contactLink = document.getElementsByClassName("contact")[0];
